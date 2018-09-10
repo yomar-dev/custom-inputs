@@ -1,0 +1,180 @@
+html {
+	height: 100%;
+}
+body {
+	background: #55a1ce;
+	background-size: cover;
+	font-family: 'Roboto';
+	box-sizing: border-box;
+	padding: 40px;
+	
+}
+h1 {
+	color: #444;
+	font-weight: 300;
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+.sub {
+	color: #999;
+	text-transform: uppercase;
+	display: block;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+/* End of basic info */
+
+.input-block {
+	display: block;
+	max-width: 460px;
+	margin: auto;
+	text-align: left;
+	background: #fff;
+	padding: 40px 30px;
+	box-shadow: 0px 0px 25px 6px rgba(0,0,0,0.1);
+}
+
+/*  */
+h3 {
+	font-size: 20px;
+	margin: 10px 0;
+	font-weight: 400;
+}
+
+/* wraps */
+
+.wrap-line {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border: 1px solid teal;
+}
+.wrap-column {
+	display: flex;
+	flex-direction: column;
+}
+
+form{
+	background: #ccc;
+	padding: 25px;
+}
+
+.wraper-field{
+	display: flex;
+	margin-bottom: 30px;
+	width: 410px;
+	position: relative;
+}
+
+.content-field{
+	border-radius: 4px;
+	display: flex;
+	border: 1px solid tomato;
+	height: 64px;
+}
+
+.image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: skyblue;
+	min-width: 50px;
+	max-width: 50px;
+}
+
+.image .icon{
+	height: 20px;
+	width: 20px;
+}
+
+.custom-input{
+	background: #ccc;
+	position: relative;
+	overflow: hidden;
+	padding-top: 15px;
+}
+
+.custom-input input {
+	padding: 10px;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	font-size: 16px;
+	position: relative;
+	z-index: 5;
+	background: none;
+	top: 7px;
+}
+
+.custom-input input:focus ~ label, input:valid ~ label  {
+	top: 14px;
+	transform: scale(0.94) translateX(-2px);
+	color: #4485c5;
+	font-size: 12px;
+}
+
+.custom-input label {
+	position: absolute;
+	left: 10px;
+	top: 45%;
+	transition: ease-out .3s;
+	color: #999;
+}
+
+.card-name{
+	width: 410px;
+}
+
+.card-name input{
+	width: 360px;
+}
+
+.card-number{
+	width: 260px;
+	margin-right: 20px;
+}
+
+.card-number input{
+	width: 210px;
+}
+
+.card-cvc{
+	text-align: center;
+	width: 130px;
+}
+
+.card-cvc .custom-input{
+	width: 70px;
+}
+
+.card-cvc .image{
+	min-width: 40px;
+	max-width: 40px;
+}
+
+.card-cvc input{
+	font-size: 15px;
+	width: 50px;
+}
+
+.card-cvc .message-error{
+	bottom: -30px;
+}
+
+.card-expiration-date,
+.card-zip-code{
+	width: 195px;
+}
+
+.card-expiration-date{
+	margin-right: 20px;
+}
+
+.message-error{
+	font-size: 12px;
+	position: absolute;
+	bottom: -15px;
+	color: red;
+}
